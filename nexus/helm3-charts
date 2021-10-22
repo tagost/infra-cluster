@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Helm3 Charts for Sonatype Products | helm3-charts</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Helm3 Charts for Sonatype Products" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Helm3 charts for Nexus IQ and Repository Manager" />
+<meta property="og:description" content="Helm3 charts for Nexus IQ and Repository Manager" />
+<link rel="canonical" href="https://sonatype.github.io/helm3-charts/" />
+<meta property="og:url" content="https://sonatype.github.io/helm3-charts/" />
+<meta property="og:site_name" content="helm3-charts" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Helm3 Charts for Sonatype Products" />
+<script type="application/ld+json">
+{"description":"Helm3 charts for Nexus IQ and Repository Manager","url":"https://sonatype.github.io/helm3-charts/","@type":"WebSite","headline":"Helm3 Charts for Sonatype Products","name":"helm3-charts","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/helm3-charts/assets/css/style.css?v=0459581d2337f692bf15ce00eaac3b607da1a1ba">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/helm3-charts/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="https://sonatype.github.io/helm3-charts/">helm3-charts</a></h1>
+      
+
+      <h2 id="helm3-charts-for-sonatype-products">Helm3 Charts for Sonatype Products</h2>
+
+<p>These charts are designed to work out of the box with minikube using both Ingress
+and Ingress DNS addons.</p>
+
+<p>The current releases have been tested on minikube v1.12.3 running k8s v1.18.3</p>
+
+<h3 id="add-the-sonatype-repo-to-your-helm">Add the Sonatype Repo to Your Helm</h3>
+
+<p><code class="language-plaintext highlighter-rouge">helm repo add sonatype https://sonatype.github.io/helm3-charts/</code></p>
+
+<h3 id="install-a-server">Install a Server</h3>
+
+<ul>
+  <li>NXRM: <code class="language-plaintext highlighter-rouge">helm install nexus-repo sonatype/nexus-repository-manager</code></li>
+  <li>Nexus IQ: <code class="language-plaintext highlighter-rouge">helm install nexus-iq sonatype/nexus-iq-server</code></li>
+</ul>
+
+<h3 id="get-the-values-for-configuring-a-chart">Get the Values for Configuring a Chart</h3>
+
+<ul>
+  <li>NXRM: <code class="language-plaintext highlighter-rouge">helm show values nexus-repo sonatype/nexus-repository-manager</code></li>
+  <li>Nexus IQ: <code class="language-plaintext highlighter-rouge">helm show values nexus-iq sonatype/nexus-iq-server</code></li>
+</ul>
+
+<p>Capture that output as your own <code class="language-plaintext highlighter-rouge">values.yaml</code> file, and provide it to the <code class="language-plaintext highlighter-rouge">helm install</code> 
+command with the <code class="language-plaintext highlighter-rouge">-f</code> option.</p>
+
+<h3 id="source">Source</h3>
+
+<p>Visit https://github.com/sonatype/helm3-charts.</p>
+
+
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  </body>
+</html>
